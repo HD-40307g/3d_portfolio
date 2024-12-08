@@ -55,8 +55,20 @@ const Home = () => {
           <hemisphereLight skyColor='#b1e1ff' groundColor='#000000' intensity={1} />
           <Bird />
           <Sky isRotating={isRotating} />
-          <Island position={islandPosition} scale={islandScale} rotation={islandRotation} isRotating={isRotating} setIsRotating={setIsRotating} setCurrentStage={setCurrentStage} />
-          <Plane isRotating={isRotating} planeScale={planeScale} planePosition={planePosition} rotation={[0, 20, 0]} />
+          <Island 
+            position={islandPosition} 
+            scale={islandScale} 
+            rotation={islandRotation} 
+            isRotating={isRotating} 
+            setIsRotating={setIsRotating} 
+            setCurrentStage={setCurrentStage}
+          />
+          <Plane 
+            isRotating={isRotating} 
+            scale={planeScale} 
+            position={planePosition} 
+            rotation={[0, 20, 0]}
+          />
         </Suspense>
       </Canvas>
     </section>
