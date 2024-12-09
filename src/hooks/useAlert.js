@@ -9,4 +9,4 @@ const useAlert = () => {
 };
 
 
-export default useAlert
+export default useAlert;
