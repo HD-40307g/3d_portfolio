@@ -1,14 +1,19 @@
-import React from 'react';
-import { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import birdScene from '../assets/3d/bird.glb';
 import { useGLTF, useAnimations } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
-const Bird = () => {
-    const { scene, animations } = useGLTF(birdScene);
+// 3D Model from: https://sketchfab.com/
+export const Bird = () => {
     const birdRef = useRef();
+
+    // Load the 3D model and animations from provided GLTF file
+    const { scene, animations } = useGLTF(birdScene);
+
+    // Get access to the animations for the bird
     const { actions } = useAnimations(animations, birdRef);
 
+    // Play the 'Take 001' animation when the component mounts
     useEffect(() => {
         actions['Take 001'].play();
     }, []);
@@ -40,9 +45,8 @@ const Bird = () => {
 
     return (
         <mesh position={[-5, 2, 1]} scale={[0.003, 0.003, 0.003]} ref={birdRef}>
+            //Use primitive element to render the bird scene
             <primitive object={scene} />
         </mesh>
-    )
+    );
 };
-
-export default Bird;

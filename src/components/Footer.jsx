@@ -7,7 +7,6 @@ const Footer = () => {
         <footer className='footer font-poppins'>
             <hr className='border-slate-200' />
             <div className='footer-container'>
-                //paragraph with dynamic year date and copyright sign
                 <p>&copy; {new Date().getFullYear()} <strong>Erik Mruz</strong> All rights reserved.</p>
                 <div className='flex gap-3 justify-center items-center'>
                     {socialLinks.map((link) => (
