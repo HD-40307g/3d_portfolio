@@ -1,9 +1,7 @@
-import React from 'react';
-import { Suspense, useState, useEffect, useRef } from 'react';
+import React, { Suspense, useState, useEffect, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
-import Loader from '../components/Loader';
+import { Loader, HomeInfo } from '../components';
 import { Bird, Island, Plane, Sky } from '../models';
-import HomeInfo from '../components/HomeInfo';
 import sakura from '../assets/sakura.mp3';
 import { soundoff, soundon } from '../assets/icons';
 
@@ -29,7 +27,7 @@ const Home = () => {
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
-    let rotation = [0.1, 4.7, 0];
+    let rotation = [0.1, 4.7077, 0];
 
     if(window.innerWidth < 768) {
       screenScale = [0.9, 0.9, 0.9];
@@ -61,10 +59,12 @@ const Home = () => {
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
-      <Canvas className={`w-full h-screen relative ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`} camera={{ near: 0.1, far: 1000 }}>
+      <Canvas className={`w-full h-screen relative bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`} camera={{ near: 0.1, far: 1000 }}>
         <Suspense fallback={<Loader />}>
           <directionalLight position={[1, 1, 1]} intensity={2} />
           <ambientLight intensity={0.5} />
+          <pointLight position={[10, 5, 10]} intensity={2} />
+          <spotLight position={[0, 50, 10]} angle={0.15} penumbra={1} intensity={2} />
           <hemisphereLight skyColor='#b1e1ff' groundColor='#000000' intensity={1} />
           <Bird />
           <Sky isRotating={isRotating} />
@@ -93,7 +93,7 @@ const Home = () => {
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

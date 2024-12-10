@@ -2,15 +2,15 @@ import React from 'react';
 import { projects } from '../constants';
 import { Link } from 'react-router-dom';
 import { arrow } from '../assets/icons';
-import CTA from '../components/CTA';
+import { CTA } from '../components';
 
 const Projects = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        My <span className='blue-gradient_text font-semibold drop-shadow'>Projects</span>
+        My{" "}<span className='blue-gradient_text font-semibold drop-shadow'>Projects</span>
       </h1>
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className='mt-5 flex flex-col gap-3 text-slate-500 leading-relaxed'>
         <p>
           I've embarked on numerous projects throughout the years, but these are
           the ones I hold closest to my heart. Many of them are open-source, so if
