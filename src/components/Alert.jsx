@@ -8,7 +8,7 @@ const Alert = ({ type, text }) => {
         <p className='mr-2 text-left'>{text}</p>
       </div>
     </div> 
-  )
-}
+  );
+};
 
 export default Alert;

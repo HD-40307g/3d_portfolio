@@ -1,5 +1,5 @@
 
-# Erik Mruz | Portfolio
+# Software Developer | Portfolio
 
 Welcome to my portfolio repository! This project showcases my skills, projects, and professional experience as a software engineer. Below, you'll find detailed information about the structure, technologies, and features of this portfolio, along with instructions on how to set up the project locally.
 
@@ -80,7 +80,7 @@ This portfolio highlights my journey and expertise as a developer through intera
 ```plaintext
 3d_portfolio
 ├── public               # Static assets (e.g., images, icons)
-├── src
+├── src                  # Folder containing main files
 │   ├── assets/          # Static assets like images, icons, and audio.
 │   ├── components/      # Reusable React components (e.g., Navbar, Footer, Loader).
 │   ├── constants/       # Centralized configuration files (e.g., projects.js).
@@ -90,6 +90,7 @@ This portfolio highlights my journey and expertise as a developer through intera
 │   ├── App.jsx          # Main application entry point.
 │   ├── main.jsx         # React DOM rendering entry point.
 │   └── index.css        # Global styles.
+├── .gitignore           # Files ignored by GitHub
 ├── eslint.config.js     # Defines rules for code linting
 ├── index.html           # Main HTML file
 ├── LICENSE              # Standard MIT License

@@ -90,6 +90,7 @@ const Home = () => {
           alt="sound" 
           className='w-10 h-10 cursor-pointer object-contain' 
           onClick={() => setIsPlayingMusic(!isPlayingMusic)} 
+          aria-label={isPlayingMusic ? 'Mute background music' : 'Play background music'}
         />
       </div>
     </section>
