@@ -8,10 +8,10 @@ const About = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        Hello, I'm{' '}<span className='blue-gradient_text font-semibold drop-shadow'>{' '}Erik</span>{''}👋
+        Hello, I'm{' '}<span className='blue-gradient_text font-semibold drop-shadow'>{' '}Erik</span>{' '}👋
       </h1>
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>Software Engineer based in Croatia, specializing in technical education through hand-on learning and building applications.</p>
+        <p>I am a passionate and self-taught developer who has been learning to code with Codecademy for over a year. Through completing multiple certificates and building over multitude of projects, I've honed my skills and am eager to start my first professional role as a full-stack software engineer</p>
       </div>
       {/* Skills Section */}
       <div className='py-10 flex flex-col'>
@@ -29,9 +29,9 @@ const About = () => {
       </div>
       {/* Work Experience Section */}
       <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience</h3>
+        <h3 className='subhead-text'>Experience</h3>
           <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-            <p>I've worked with all sorts of companies, leveling up my skills and teaming up with smart people. Here's the rundown:</p>
+            <p>While I haven't yet held a formal software engineering position, I've built a strong foundation through hands-on experience with multiple projects and rigorous learning, showcasing my ability to tackle real-world coding challenges.</p>
           </div>
           <div className='mt-12 flex'>
             <VerticalTimeline>

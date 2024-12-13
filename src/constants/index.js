@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { codecademy } from "../assets/images";
 import {
     car,
     contact,
@@ -9,16 +9,13 @@ import {
     github,
     html,
     javascript,
-    linkedin,
     mongodb,
-    motion,
-    mui,
+    postgresql,
     nextjs,
     nodejs,
     pricewise,
     react,
     redux,
-    sass,
     snapgram,
     summiz,
     tailwindcss,
@@ -63,14 +60,9 @@ export const skills = [
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Database",
     },
     {
         imageUrl: nextjs,
@@ -93,11 +85,6 @@ export const skills = [
         type: "State Management",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
@@ -111,55 +98,39 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Full stack Developer",
+        company_name: "Codecademy",
+        icon: codecademy,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "I have hands-on experience in building full-stack applications, I've developed features like authentication, RESTful APIs, and database integrations using Node.js, Express, and MongoDB.",
+            "My approach emphasizes efficient backend logic paired with seamless front-end performance for a complete user experience.",
+            "My dedication to learning and my ability to adapt to new technologies make me an asset for teams seeking innovative and reliable solutions.",
         ],
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        company_name: "Codecademy",
+        icon: codecademy,
+        iconBg: "#fbc3bc",
+        date: "2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "I have experience developing web projects, ranging from responsive personal websites to dynamic e-commerce platforms, focusing on clean design and user-friendly functionality.",
+            "Leveraging technologies like HTML, CSS, JavaScript, and React, I've honed my ability to create visually appealing and highly interactive web experiences.",
+            "I implement responsive design while ensuring cross-browser compatibility using React.js and other related technologies.",
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Fundamentals of Cybersecurity",
+        company_name: "Codecademy",
+        icon: codecademy,
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        date: "2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Having completed foundational training in cybersecurity, I understand the importance of secure code practices, data encryption, and vulnerability mitigation.",
+            "This knowledge enables me to incorporate security-first principles into every project I develop, ensuring user data is safeguarded.",
+            "I thrive on solving complex coding challenges and continuously expanding my skillset.",
         ],
     },
 ];
@@ -173,12 +144,7 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://github.com/HD-40307g',
     }
 ];
 
@@ -186,9 +152,9 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'HooBank',
+        description: 'HooBank is a sleek and professional banking website built with React and Tailwind CSS, featuring responsive design and smooth animations.',
+        link: 'https://github.com/HD-40307g/bank_modern_app',
     },
     {
         iconUrl: threads,
@@ -200,29 +166,29 @@ export const projects = [
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
+        name: 'CarHub',
         description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        link: 'https://github.com/HD-40307g/car_showcase',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Sushiman',
+        description: 'A beautifully designed and fully responsive website built with HTML and CSS, focusing on clean layout and cross-device compatibility, demonstrating expertise in front-end development and modern styling techniques.',
+        link: 'https://github.com/HD-40307g/sushiman',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Brainwave',
+        description: 'This project showcases advanced React development skills, including state management and API integration.',
+        link: 'https://github.com/HD-40307g/brainwave',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'AI Summarizer Application',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        link: 'https://github.com/HD-40307g/ai_summerizer',
     }
 ];
