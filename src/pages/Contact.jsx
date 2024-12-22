@@ -33,7 +33,7 @@ const Contact = () => {
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     ).then(() => {
       setIsLoading(false);
-      showAlert({ show: true, text: 'Thank yu for your message!', type: 'success' });
+      showAlert({ show: true, text: 'Thank you for your message!', type: 'success' });
       setTimeout(() => {
         hideAlert(false);
         setCurrentAnimation('idle');
